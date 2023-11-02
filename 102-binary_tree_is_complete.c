@@ -3,13 +3,13 @@
 
 /**
  * is_complete - Checks if a tree is complete or not
- * @root: Pointer to root of the tree
+ * @tree: Pointer to root of the tree
  * @index: Index of the node been checked
  * @num: number of trees nod
  * Return: 1 if the tree is a heap, 0 otherwise
  */
 
-int is_complete (const binary_tree_t *tree, int index, int num)
+int is_complete(const binary_tree_t *tree, int index, int num)
 {
 	if (tree == NULL)
 	{
@@ -35,7 +35,7 @@ int binary_tree_is_complete(const binary_tree_t *tree)
 
 	if (tree == NULL)
 	{
-		return(0);
+		return (0);
 	}
 	size = binary_tree_size(tree);
 	return (is_complete(tree, 0, size));
